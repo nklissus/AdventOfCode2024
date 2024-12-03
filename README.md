@@ -6,3 +6,6 @@ Pretty simple task to start off. Ruby makes it really easy to interact with arra
 
 ## Day 02
 A little bit more complex and I'm sure there's a better way to structure the code, but this problem was as simple as identifying any "bad" lines given a certain set of parameters. Part 2 adds a little challenge since we have to go back and reevaluate those "bad" rows but converting the evaluation logic into a function made it pretty easy. A big thing I got caught up on was that Ruby doesn't implicitly create copies of arrays (like Python might) and you have to explicitly use the `.dup` function of an array to create a copy.
+
+## Day 03
+This one immediately screamed "regex" so that was the tactic I started with. It ended up being very straight forward except that Ruby uses `..` instead of `,` when slicing strings but once I got that dialed in it was done. Part 2 just required a couple additions to the regex expression. The sample input was different for part 2 which tripped me up until I noticed, but once I updated that it worked on the first try.
