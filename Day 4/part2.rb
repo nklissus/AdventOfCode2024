@@ -32,7 +32,6 @@ lines.length.times do |y|
     lines[y].length.times do |x|
         if lines[y][x] == 'A'
             next_m = check_for_M([x,y], lines)
-            valid = true
             next unless next_m.length > 1
 
             valid = next_m.all? { |direction| check_cross([x, y], direction, lines) }
