@@ -21,12 +21,10 @@ def update_stones(stones)
     new_stones
 end
 
-75.times do |i|
+75.times do
     stones = update_stones(stones)
 end
 
 total_stones = stones.each.map{ |j, k| k }.sum
 
 puts "After 75 blinks there are #{total_stones} stones"
-
-stop = Time.now
